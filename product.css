@@ -1,0 +1,102 @@
+/* product.css - Estilos específicos de la ficha de producto */
+
+.product-detail-container {
+    padding: 4rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.product-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Galería */
+.main-image-box {
+    background: var(--gray-light);
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Detalles */
+.product-details {
+    padding-top: 20px;
+    position: sticky;
+    top: 100px;
+}
+
+.breadcrumb {
+    font-size: 0.8rem;
+    color: var(--gray-medium);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.breadcrumb a { color: var(--gray-medium); text-decoration: none; }
+
+.product-details h1 {
+    font-family: var(--font-luxury);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.product-details .price {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.product-description {
+    margin-bottom: 40px;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Tallas */
+.size-selector { margin-bottom: 40px; }
+.size-selector .label {
+    display: block; font-size: 0.8rem; text-transform: uppercase;
+    letter-spacing: 1px; margin-bottom: 15px; font-weight: 600;
+}
+.sizes { display: flex; gap: 10px; }
+.size-btn {
+    width: 50px; height: 50px; border: 1px solid var(--border);
+    background: transparent; cursor: pointer; font-family: var(--font-main);
+    transition: all 0.3s;
+}
+.size-btn:hover { border-color: var(--black); }
+.size-btn.active { background: var(--black); color: var(--white); border-color: var(--black); }
+
+/* Botón Compra */
+.add-to-cart-btn {
+    width: 100%; padding: 18px; background: var(--black); color: var(--white);
+    border: none; text-transform: uppercase; letter-spacing: 2px;
+    font-size: 0.9rem; cursor: pointer; transition: opacity 0.3s; margin-bottom: 30px;
+}
+.add-to-cart-btn:hover { opacity: 0.9; }
+
+.size-btn.active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .product-wrapper { grid-template-columns: 1fr; gap: 40px; }
+    .main-image-box { height: 500px; }
+    .product-details { position: static; }
+}

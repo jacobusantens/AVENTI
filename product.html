@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto | BRAND</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="promo-track">
+            <span>Envío gratuito en pedidos superiores a 150€</span>
+            <span>Hecho a mano bajo demanda (POD)</span>
+            <span>Envío gratuito en pedidos superiores a 150€</span>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">ANVI</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Colección</a></li>
+                <li><a href="#">Sostenibilidad</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="cart-trigger">
+                <a href="cart.html" style="text-decoration:none; color:inherit;">
+                    CARRITO (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-detail-container">
+        <div class="product-wrapper">
+            <div class="product-gallery">
+                <div class="main-image-box">
+                    <img id="p-img" src="" alt="Cargando...">
+                </div>
+            </div>
+
+            <div class="product-details">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> / <span id="p-category">Categoría</span>
+                </nav>
+                
+                <h1 id="p-name">Cargando...</h1>
+                <p class="price" id="p-price">0.00 €</p>
+
+                <div class="product-description">
+                    <p id="p-description">Cargando descripción detallada del producto...</p>
+                </div>
+
+                <div class="size-selector">
+                    <span class="label">Seleccionar Talla</span>
+                    <div class="sizes">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                </div>
+
+                <button id="add-to-cart-btn" class="add-to-cart-btn">Añadir a la cesta</button>
+                
+                <div class="extra-info">
+                    <div class="info-item"><strong>Envío:</strong> 5-10 días laborables</div>
+                    <div class="info-item"><strong>POD:</strong> Producto fabricado éticamente bajo demanda.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-wrap">
+            <div class="footer-brand">
+                <div class="logo-footer">ANVI</div>
+                <p>Diseñado para quienes construyen el mañana.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explorar</h4>
+                <ul>
+                    <li>Contacto</li>
+                    <li>Términos y Condiciones</li>
+                    <li>Privacidad</li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter Privada</h4>
+                <div class="input-group">
+                    <input type="email" placeholder="Tu email profesional">
+                    <button>Unirse</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 ANVI Studio. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="render.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

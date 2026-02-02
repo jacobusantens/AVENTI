@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFIRMACIÓN DE PEDIDO | ANVI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --dark-accent: #444444; /* Tono más oscuro y elegante para detalles */
+            --border-color: #e5e5e5; /* Borde de la caja más definido */
+            --text-muted: #555;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            color: var(--black);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .luxury-card {
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            padding: 60px 40px;
+            background: var(--white);
+            border: 1px solid var(--border-color); /* Contorno de la caja más oscuro */
+            position: relative;
+        }
+
+        .luxury-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--black);
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            margin-bottom: 45px;
+        }
+
+        .success-mark {
+            font-size: 13px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--black); /* Éxito ahora en negro puro para máxima elegancia */
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 1.85rem;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .message {
+            font-size: 14px;
+            line-height: 1.9;
+            color: var(--text-muted);
+            margin-bottom: 45px;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+
+        .details-box {
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 30px 0;
+            margin-bottom: 45px;
+        }
+
+        .order-id {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--dark-accent); /* Status ahora más oscuro y legible */
+            font-weight: 500;
+        }
+
+        .btn-minimal {
+            display: inline-block;
+            padding: 20px 45px;
+            background-color: var(--black);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 1px solid var(--black);
+        }
+
+        .btn-minimal:hover {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        .fade-in {
+            animation: fadeIn 1.8s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="luxury-card fade-in">
+        <div class="brand-name">ANVI</div>
+        
+        <div class="success-mark">Transacción Confirmada</div>
+        
+        <h1>Tu pieza exclusiva está en camino.</h1>
+        
+        <div class="message">
+            Tu pedido ha sido registrado con éxito. <br>
+            Nuestro equipo está preparando la logística para asegurar una entrega a la altura de tus expectativas.
+        </div>
+
+        <div class="details-box">
+            <div class="order-id">Status: Preparando Envío</div>
+        </div>
+
+        <a href="index.html" class="btn-minimal">Volver a la colección</a>
+    </div>
+
+</body>
+</html>
